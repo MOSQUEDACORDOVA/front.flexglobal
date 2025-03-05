@@ -70,7 +70,7 @@
   --label-primary-link--background: var(--label-primary--background);
   --label-primary-link--text-color: var(--label-primary--text-color);
   --label-primary-link--border-color-hover: var(--label-primary-link--border-color);
-  --label-primary-link--background-hover: var(--global-colors--background-primary-muted);
+  --label-primary-link--background-hover: var (--global-colors--background-primary-muted);
   --label-primary-link--text-color-hover: var(--label-primary-link--text-color);
   --label-primary-link--border-color-pressed: var(--label-primary-link--border-color);
   --label-primary-link--background-pressed: var(--label-primary-link--background);
@@ -286,13 +286,13 @@
   --navbar-item--letter-spacing: 0px;
   --navbar-item-default--text-color-hover: var(--navbar-item-default--text-color);
   --button-text--border-width: var(--global--border-width);
-  --button-text-default--border-color: var(--button-text-default--text-color);
+  --button-text-default--border-color: #BC9B5F;
   --button-text-inverse--border-color: var(--button-text-inverse--text-color);
   --global-colors--background-muted-2: #eee;
   --navbar-item--border-width: var(--global--border-width);
-  --navbar-item-default--border-color: var(--navbar-item-default--text-color);
+  --navbar-item-default--border-color: #BC9B5F;
   --global-colors--background-primary-muted: #181a1b;
-  --global--heading-font-family: "Anton SC", sans-serif;
+  
   --global-colors--background-primary-muted-2: #1f2122;
   --card-muted-2--text-color: var(--global-colors--text-default);
   --card-muted-2--background: var(--global-colors--background-muted-2);
@@ -1515,7 +1515,7 @@ figcaption {
 .heading-style-large {
   font-family: var(--heading--large-font-family);
   text-transform: uppercase;
-  font-size: 12vw;
+
   font-weight: 400;
   line-height: 100%;
 }
@@ -2617,7 +2617,7 @@ figcaption {
   color: var(--global-colors--text-inverse);
   flex-flow: column;
   justify-content: space-between;
-  min-height: 100vh;
+
   padding: 6vw 6vw 2vw;
   display: flex;
   position: relative;
@@ -4213,7 +4213,6 @@ figcaption {
 .home-hero-right-top {
   flex-flow: column;
   justify-content: space-between;
-  height: 100vh;
   padding: 10vw 6vw 4vw;
   display: flex;
 }
@@ -4272,7 +4271,7 @@ figcaption {
 .heading-style-xxlarge {
   font-family: var(--heading--xlarge-font-family);
   text-transform: uppercase;
-  font-size: 19vw;
+
   font-weight: 400;
   line-height: 100%;
 }
@@ -4513,9 +4512,6 @@ figcaption {
   font-size: 4vw;
   font-weight: 600;
   line-height: 120%;
-}
-.navbar-logo-image {
-  height: 30px;
 }
 
 .services-process-item {
@@ -5161,10 +5157,6 @@ figcaption {
     font-size: 10rem;
   }
 
-  .heading-style-large {
-    font-size: 12rem;
-  }
-
   .heading-style-xlarge {
     font-size: 15rem;
   }
@@ -5269,10 +5261,6 @@ figcaption {
 
   .heading-alt-small {
     font-size: 5rem;
-  }
-
-  .heading-style-xxlarge {
-    font-size: 19rem;
   }
 
   .home-services-item {
@@ -5662,7 +5650,7 @@ figcaption {
   }
 
   .navbar {
-    padding: 1rem 4rem;
+    padding: 0.2rem 4rem;
     display: flex;
   }
 
@@ -6359,7 +6347,7 @@ figcaption {
   }
 
   .main-wrapper {
-    padding-top: 70px;
+    padding-top: 60px;
   }
 
   .max-width-full-mobile-landscape {
@@ -6496,7 +6484,7 @@ figcaption {
   }
 
   .navbar {
-    padding: 1.25rem 2.5rem;
+    padding: 0.2rem 2.5rem;
   }
 
   .heading-style-h3 {
@@ -7053,7 +7041,7 @@ figcaption {
   .navbar {
     grid-column-gap: .5rem;
     grid-row-gap: .5rem;
-    padding: 1rem 2rem;
+    padding: 0.2rem 2rem;
   }
 
   .heading-style-h3 {
@@ -7175,10 +7163,6 @@ figcaption {
     padding-top: 1.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .navbar-logo-image {
-    height: 30px;
   }
 
   .nav {
