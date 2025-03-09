@@ -53,6 +53,9 @@
 .border-top{
     border-top: 1px solid #000;
 }
+.icon-check{
+    margin-top: -4px;
+}
 @media (orientation: portrait) {
     .navbar{
         border-bottom: 1px solid #000;
