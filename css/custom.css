@@ -13,6 +13,9 @@
 .heading-style-xxlarge {
     font-size: 8vw;
 }
+.home-hero-right{
+    background-color: var(--global-colors--background-muted);
+}
 .footer {
     gap: 64px;
 }
