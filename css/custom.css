@@ -16,6 +16,13 @@
 .footer {
     gap: 64px;
 }
+.redes-sociales{
+    display: flex;
+    gap: 16px;
+}
+.redes-sociales svg{
+    color: var(--nav-default-inverse--text-color);
+}
 .color-dorado{
     color: #BC9B5F;
 }
@@ -41,20 +48,35 @@
 .container-video-background::after{
     content: ' ';
     position: absolute;
-    background: url('../images/imagotipo-fg-blanco.svg') no-repeat center center;
+    background: url('../images/imagotipo-fg-blanco.png') no-repeat center center;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+    background-size: 30px;
 }
 .logo_movil{
-    height: 60px;
+    height: 50px;
 }
 .border-top{
     border-top: 1px solid #000;
 }
 .icon-check{
     margin-top: -4px;
+}
+.btn-transparent{
+    display: flex;
+    padding: 8px 12px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    gap: 12px;
+}
+.border-radius-circle{
+    border: 1px solid var(--global-colors--text-default);
+}
+.button-inner-text{
+    display: flex;
+    gap:16px;
 }
 @media (orientation: portrait) {
     .navbar{
@@ -81,7 +103,7 @@
 }
 @media screen and (max-width: 991px) {
     .heading-style-large {
-        font-size: 18vw;
+        font-size: 17vw;
     }
 }
 @media screen and (min-width: 1440px) {
@@ -90,8 +112,5 @@
     }
     .heading-style-xxlarge {
         font-size: 12rem;
-    }
-    .footer {
-        gap: 164px;
     }
 }
