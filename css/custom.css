@@ -8,7 +8,7 @@
     --global--heading-font-family: "Calldera", sans-serif;
 }
 .heading-style-large {
-    font-size: 8vw;
+    font-size: 6vw;
 }
 .heading-style-xxlarge {
     font-size: 8vw;
@@ -33,14 +33,14 @@
     display: none !important;
 }
 .navbar-logo-image {
-    height: 70px;
+    height: 48px;
 }
 .container-video-background{
     top: 0;
     width: 100%;
     height: 75vw;
     background: #000;
-    position: relative;
+    position: absolute;
 }
 .video-background{    
     width: 100%;
@@ -51,12 +51,12 @@
 .container-video-background::after{
     content: ' ';
     position: absolute;
-    background: url('../images/imagotipo-fg-blanco.png') no-repeat center center;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     background-size: 30px;
+    background-color: #00000099;
 }
 .logo_movil{
     height: 50px;
@@ -70,9 +70,12 @@
 .btn-transparent{
     display: flex;
     padding: 8px 12px;
-    border: 1px solid #000;
+    border: 1px solid var(--global-colors--text-default);
     border-radius: 8px;
     gap: 12px;
+}
+.btn-transparent svg{
+    color: var(--global-colors--text-default);
 }
 .border-radius-circle{
     border: 1px solid var(--global-colors--text-default);
@@ -81,37 +84,60 @@
     display: flex;
     gap:16px;
 }
+.header-small {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--global-colors--background-muted);
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Asegúrate de que el header esté por encima de otros elementos */
+    border-bottom: 1px solid var(--global-colors--text-default);
+    transition: background-color 0.3s ease-in-out, border-bottom-color 0.3s ease-in-out;
+  }
+  .navbar-small {
+    padding: 0.6rem 6vw 0.6rem 4vw;
+  }
+.home-hero-right-top{
+    color: white;
+}
+.home-hero-right-top{
+    justify-content: center;
+}
+.container-video-background{
+    height: 100vh;
+}
+
 @media (orientation: portrait) {
     .navbar{
         border-bottom: 1px solid #000;
     }
-    .navbar-logo{
+    .navbar-logo,.direccion-portada{
         display: none !important;
+    }
+    .home-hero-right-top{
+        min-height: 100vh;
     }
 }
 @media (orientation: landscape) {
     .logo_movil{
         display: none;
     }
-    .container-video-background{
-        height: 100vh;
-        position: sticky;
-    }
+    
     .home-hero-right-top{
         min-height: 100vh;
     }
-    .container-video-background::after{
+    .nombre-marca-portada{
         display: none;
     }
 }
 @media screen and (max-width: 991px) {
     .heading-style-large {
-        font-size: 17vw;
+        font-size: 13vw;
     }
 }
 @media screen and (min-width: 1440px) {
     .heading-style-large {
-        font-size: 8rem;
+        font-size: 4rem;
     }
     .heading-style-xxlarge {
         font-size: 12rem;
