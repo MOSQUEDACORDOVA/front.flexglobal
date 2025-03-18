@@ -1,2 +1,1 @@
-# front.flexglobal
- 
+firebase deploy --only hosting    
