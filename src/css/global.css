@@ -1,8 +1,8 @@
 /* Esta e suna forma temporal de delcarar las variables de bootstrap */
 
 :root {
-    --bs-primary: #ff5733; /* Nuevo color primario */
-    --bs-primary-fuerte: #f00; /* esto se debe borrar */
+    --bs-primary: #BC9B5F; /* Nuevo color primario */
+    --bs-primary-fuerte: #917134; /* esto se debe borrar */
     --bs-primary-rgb: 255, 87, 51;
     --link-color: var(--bs-primary); /* Color de los enlaces */
     --bs-btn-color: #ffffff; /* Color del texto del botón */
@@ -13,6 +13,7 @@
     --bs-btn-hover-border-color:var(--bs-primary-fuerte);
     --bs-btn-active-bg:var(--bs-primary-fuerte);
     --bs-btn-active-border-color2:var(--bs-primary-fuerte);
+    --bs-dropdown-link-active-bg:var(--bs-primary)
 }
 
 .btn-primary {
@@ -38,4 +39,40 @@ a:hover{
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
     background-color: var(--bs-primary-fuerte);
     border-color: var(--bs-btn-active-border-color2);
+}
+
+.bg-dark * {
+    color: white;
+  }
+
+@font-face {
+    font-family: 'Calldera';
+    src: url('fonts/Calldera.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family:  Inter, sans-serif;
+}
+h1{
+    font-weight: 600 !important;
+}
+
+.nav-link {
+    color:black;
+    font-weight: lighter;
+  }
+.dropdown-item{
+    color:black;
+    font-weight: lighter;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown:hover .dropdown-menu-md-end{
+    right: 0;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--bs-primary);
 }

@@ -1,0 +1,23 @@
+<import from="../../components/galeria-estados/galeria-estados"></import>
+<import from="../../components/aliados-comerciales/aliados-comerciales"></import>
+
+<div class="container vh-100 d-flex flex-column justify-content-center align-items-center">
+  <div class="container-video-background z-index-0">
+    <video class="video-background w-100 h-100" autoplay muted loop>
+      <source src.bind="video" type="video/mp4">
+      Tu navegador no soporta la etiqueta de video.
+    </video>
+  </div>
+  <div class="z-index-1 position-relative text-white d-flex gap-4 flex-column">
+    <h1 class="display-4">
+      Ofrecemos asesoría para acceder al mejor servicio de salud y atención médica.
+    </h1>
+    <p class="fs-4">
+      Alineados con la reforma de OBAMACARE, destinada a hacer el seguro médico más accesible y asequible, facilitamos la inscripción de individuos y familias en una compañía de salud a bajo costo.
+    </p>
+  </div>
+</div>
+
+<galeria-estados></galeria-estados>
+
+<aliados-comerciales></aliados-comerciales>

@@ -2,7 +2,7 @@
 
 /* RANDOM  Se debe corregir y ver si hay algo que no es global */
 a:hover, a.active {
-  background-color: rgba(222, 222, 222, .5);
+  background-color: rgba(222, 222, 222, .0);
 }
 
 .bi {
@@ -54,4 +54,11 @@ a:hover, a.active {
   .border-sm-0 {
     border: none !important;
   }
+}
+
+.dropdown-toggle::after{
+  color: #ccc;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
 }

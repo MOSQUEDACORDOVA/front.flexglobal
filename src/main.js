@@ -8,6 +8,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './css/random.css';
 import './css/global.css';
 import './css/solicitudes-cliente.css';
+import './css/navbars-offcanvas.css';
+import './css/cover.css';
 
 Aurelia
   //.register(RouterConfiguration)
@@ -15,7 +17,7 @@ Aurelia
   // customized router config.
   .register(RouterConfiguration.customize({ 
     useUrlFragmentHash: false,
-    title: '${componentTitles} ${appTitleSeparator} PrestaLider',
+    title: '${componentTitles} ${appTitleSeparator} Flex Global',
   }))
   .app(MyApp)
   .start();

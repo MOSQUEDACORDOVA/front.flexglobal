@@ -1,4 +1,4 @@
 export class HeaderComponent {
-  logo = new URL('../../assets/images/default.jpg', import.meta.url).href;
+  logo = new URL('../../assets/images/fg-full-negro-dorado.svg', import.meta.url).href;
   }
   
